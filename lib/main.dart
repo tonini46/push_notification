@@ -7,12 +7,12 @@ import 'package:push_notification/services/local_notification_service.dart';
 import 'green_page.dart';
 
 ///Receive message when app is in background solution for on message
-Future<void> backgroundHandler(RemoteMessage message) async{
+Future<void> backgroundHandler(RemoteMessage message) async {
   print(message.data.toString());
   print(message.notification!.title);
 }
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   FirebaseMessaging.onBackgroundMessage(backgroundHandler);
@@ -46,10 +46,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     LocalNotificationService.initialize(context);
@@ -57,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
     ///gives you the message on which user taps
     ///and it opened the app from terminated state
     FirebaseMessaging.instance.getInitialMessage().then((message) {
-      if(message != null){
+      if (message != null) {
         final routeFromMessage = message.data["route"];
 
         Navigator.of(context).pushNamed(routeFromMessage);
@@ -66,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     ///forground work
     FirebaseMessaging.onMessage.listen((message) {
-      if(message.notification != null){
+      if (message.notification != null) {
         print(message.notification!.body);
         print(message.notification!.title);
       }
@@ -81,14 +79,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
       Navigator.of(context).pushNamed(routeFromMessage);
     });
-
-
-
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(18.0),
