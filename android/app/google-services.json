@@ -1,34 +1,78 @@
 {
   "project_info": {
-    "project_number": "450781757822",
-    "project_id": "push-tutorial-c254d",
-    "storage_bucket": "push-tutorial-c254d.appspot.com"
+    "project_number": "1014107798648",
+    "firebase_url": "https://towit-live.firebaseio.com",
+    "project_id": "towit-live",
+    "storage_bucket": "towit-live.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:450781757822:android:b6fa688d37562c0e2df32f",
+        "mobilesdk_app_id": "1:1014107798648:android:18f332682031876668418d",
         "android_client_info": {
-          "package_name": "com.easyapproach.push_notification"
+          "package_name": "com.towit.provider"
         }
       },
       "oauth_client": [
         {
-          "client_id": "450781757822-1lscge6gv3c8l965dpn01vf6nk7d76kh.apps.googleusercontent.com",
+          "client_id": "1014107798648-fjsofhkiaavqgp026adktu7jc41ocb53.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBPPj1Fh8o_78DSdbu_uxyG4hZLBuwoBaQ"
+          "current_key": "AIzaSyA1A8ipae5yLuSi1kmJIYM8z0iT5kslJrU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "450781757822-1lscge6gv3c8l965dpn01vf6nk7d76kh.apps.googleusercontent.com",
+              "client_id": "1014107798648-fjsofhkiaavqgp026adktu7jc41ocb53.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1014107798648-cr205c9nrgel04ccrn2t9e1c3asjvjrd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.towit.provider"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014107798648:android:a6d161680b78ef7568418d",
+        "android_client_info": {
+          "package_name": "com.towit.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014107798648-fjsofhkiaavqgp026adktu7jc41ocb53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1A8ipae5yLuSi1kmJIYM8z0iT5kslJrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014107798648-fjsofhkiaavqgp026adktu7jc41ocb53.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1014107798648-cr205c9nrgel04ccrn2t9e1c3asjvjrd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.towit.provider"
+              }
             }
           ]
         }

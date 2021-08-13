@@ -36,6 +36,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  change_app_package_name: ^0.1.2 # flutter pub run change_app_package_name:main co.grouptime.grupcash
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -1,4 +1,4 @@
-package com.easyapproach.push_notification
+package com.towit.user
 
 import io.flutter.embedding.android.FlutterActivity
 
